@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #8C9EFF;
+    height: 10vh;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    height: 85vh;
+    width: 100vw;
+    overflow: auto;
+}
+
+footer {
+    background-color: #8C9EFF;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerText {
+    font-size: 90%;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.navButtonsClass {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.navButtons {
+    width: 85px;
+    height: 30px;
+    border: #425eff solid 3px;
+    border-radius: 10px;
+    background-color: rgb(205, 205, 205);
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navButtons:hover {
+    background-color: #348fff;
+    scale: 1.2;
+}
+
+.navButtons:active {
+    transform: scale(0.95);
+    background: rgb(64, 64, 64);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.indexMain {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoMain {
+    height: 40%;
+}
+
+.imageMain {
+    width: 100%;
+    height: 100%;
+}
+
+.mainText1 {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    font-family: "Playwrite DE SAS", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    align-items: end;
+}
+
+.mainText2 {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    font-family: "Playwrite DE SAS", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    align-items: start;
+}
+
+.mainButtons {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mainButton {
+    width: 110px;
+    height: 40px;
+    border: gray solid 2px;
+    background-color: #8C9EFF;
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.mainButton:hover {
+    background-color: #425eff;
+    scale: 1.2;
+    color: black;
+    font-size: large;
+}
+
+.mainButton:active {
+    transform: scale(0.95);
+    background: rgb(64, 64, 64);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.aboutMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutContainer {
+    background-color: #8C9EFF;
+    border: gray solid 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.aboutParagraph {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: grey;
+}
+
+.SocialDivs {
+    background-color: #8C9EFF;
+    height: 70%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    justify-content: flex-start;
+    border: #425eff solid 5px;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.brand {
+    height: 25%;
+    width: 20%;
+}
+
+.me {
+    height: 75%;
+    width: 70%;
+}
+
+.contactImages {
+    width: 100%;
+    border-radius: 50%;
+    border: #425eff solid 3px;
+    
+}
+
+.name {
+    font-size: larger;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+}
+
+.anchore {
+    display: contents;
+    color: inherit;
+    pointer-events: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blogMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blogButton {
+    height: 12%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs {
+    height: 88%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 0;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.addBlogButton {
+    width: 10%;
+    height: 65%;
+    background-color: #8C9EFF;
+    border: #425eff solid 2px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.addBlogButton:hover {
+    background-color: #425eff;
+    scale: 1.1;
+    color: black;
+    font-size: large;
+}
+
+.addBlogButton:active {
+    transform: scale(0.95);
+    background: rgb(64, 64, 64);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.writeMain {
+    background-color: rgb(130, 130, 130);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titlePlace {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textPlace {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.titleArea {
+    width: 90%;
+    height: 50%;
+    font-size: x-large;
+    border:#425eff solid 3px;
+}
+
+.textArea {
+    width: 90%;
+    height: 90%;
+    font-size: large;
+    border:#425eff solid 3px;
+}
+
+.buttonArea {
+    width: 90%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.blog {
+    background-color: #8C9EFF;
+    min-height: 40%;
+    width: 50%;
+    border: #425eff solid 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.blogTitle {
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+.blogText {
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+.titleMessage {
+    font-size: larger;
+}
+
+.missed {
+    height: 70%;
+}
+
+.viewMain {
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.viewContent {
+    width: 90%;
+}
+
+.back {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.postButton {
+    justify-content: flex-start;
+}
+
+.postButtons {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.b {
+    width: 20%;
+    height: 50%;
+}
+
+.modifyButton {
+    background-color: aqua;
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+@media (max-width: 600px) {
+    .contactContainer {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .SocialDivs {
+        height: 70%;
+        width: 90%;
+    }
+
+    .blog {
+        width: 85%;
+    }
+
+    .addBlogButton {
+        width: 100px;
+    }
+
+    .navButtonsClass {
+        justify-content: flex-start;
+        gap: 5px;
+        padding-left: 0;
+        width: 60%;
+    }
+
+    .navButtonsPhone {
+        width: 51px;
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,19 @@
+<%-include("./partials/header.ejs")%>
+    <main>
+        <form class="anchore" action="/updated" method="post">
+            <div class="writeMain">
+                <%if(locals.blogs){%>
+                <div class="titlePlace">
+                    <textarea type="text" name="updatedTitle" placeholder="Title" class="titleArea" required><%=blogs.title%></textarea>
+                </div>
+                <div class="textPlace">
+                    <textarea class="textArea" name="updatedText" placeholder="Text" required><%-blogs.text%></textarea>
+                </div>
+                <div class="buttonArea">
+                    <button type="submit" class="addBlogButton">Update</button>
+                </div>
+                <%}%>
+            </div>
+        </form>
+    </main>
+<%-include("./partials/footer.ejs")%>

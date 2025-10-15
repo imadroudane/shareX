@@ -1,0 +1,17 @@
+<%-include("./partials/header.ejs")%>
+    <main>
+        <form class="anchore" action="/save" method="post">
+            <div class="writeMain">
+                <div class="titlePlace">
+                    <textarea type="text" name="title" placeholder="Title" class="titleArea" required></textarea>
+                </div>
+                <div class="textPlace">
+                    <textarea class="textArea" name="text" placeholder="Text" required></textarea>
+                </div>
+                <div class="buttonArea">
+                    <button type="submit" class="addBlogButton">Post</button>
+                </div>
+            </div>
+        </form>
+    </main>
+<%-include("./partials/footer.ejs")%>

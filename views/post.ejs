@@ -1,0 +1,26 @@
+<%-include("./partials/header.ejs")%>
+    <main class="blogMain">
+        <div class="blogButton postButton">
+            <form class="anchore" action="/blogs" method="get">
+                <button class="addBlogButton">Back</button>
+            </form>
+        </div>
+        <div class="blogs">
+            <%if(locals.blogs){%>
+                <%for(var i = 0; i < blogs.length; i++){%>
+            <div class="blog">
+                <div class="blogTitle">
+                    <h1 class="titleMessage"><%=blogs[i].title%></h1>
+                </div>
+                <hr>
+                <div class="blogText postButtons">
+                    <button class="addBlogButton b modifyButton">Modify</button><button class="addBlogButton b deleteButton">Delete</button>
+                </div>
+            </div>
+                <%}%>
+            <%}%>
+        </div>
+    </main>
+    <script src="scripts/postsDelete.js"></script>
+    <script src="scripts/postsModify.js"></script>
+<%-include("./partials/footer.ejs")%>

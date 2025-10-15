@@ -1,0 +1,12 @@
+<%-include("./partials/header.ejs")%>
+    <main class="viewMain">
+        <div class="viewContent">
+            <div class="back"><a class="anchore" href="/blogs"><button class="addBlogButton" type="submit">Back</button></a></div>
+            <%if(locals.blogs){%>
+            <h1 class="titleContent"><%=blogs.title%></h1>
+            <hr>
+            <h3 class="textContent"><%-blogs.text%></h3>
+            <%}%>
+        </div>
+    </main>
+<%-include("./partials/footer.ejs")%>

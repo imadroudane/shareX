@@ -1,0 +1,25 @@
+<%-include("./partials/header.ejs")%>
+    <main class="blogMain">
+        <div class="blogButton">
+            <form class="anchore" action="/write" method="get">
+                <button class="addBlogButton">Add Blog</button>
+            </form>
+        </div>
+        <div class="blogs">
+            <%if(locals.blogs){%>
+                <%for(var i = 0; i < blogs.length; i++){%>
+            <div class="blog">
+                <div class="blogTitle">
+                    <h1 class="titleMessage"><%=blogs[i].title%></h1>
+                </div>
+                <hr>
+                <div class="blogText">
+                    <h3 class="textMessage"><%=blogs[i].text%></h3>
+                </div>
+            </div>
+                <%}%>
+            <%}%>
+        </div>
+    </main>
+    <script src="scripts/blogsTarger.js"></script>
+<%-include("./partials/footer.ejs")%>
